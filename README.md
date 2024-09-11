@@ -1,7 +1,3 @@
-Aqui está uma sugestão de README para o projeto **Talento Cloud - ForAll**:
-
----
-
 # ForAll - Clínica de Estética Avançada
 
 Este é o repositório do projeto **ForAll**, uma página web de uma clínica de estética avançada, desenvolvida como parte do projeto integrador do curso **Talento Cloud** da **Proz**. Este projeto tem como objetivo aplicar e demonstrar as habilidades adquiridas durante o curso, utilizando tecnologias front-end como **HTML**, **CSS** e **JavaScript**.
