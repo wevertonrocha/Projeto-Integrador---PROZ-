@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>forAll - Clínica de Estética Avançada</title>
+  <link rel="shortcut icon" href="src/imagens/icone - ForAll Clinica de Estetica Avancada 1.png" type="image/x-icon" />
+  <!-- Google fonts Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap"
+    rel="stylesheet" />
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- CSS do projeto -->
+  <link rel="stylesheet" href="css/servicos.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="JS/servicos.js" defer></script>
+  <!-- JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- NAVBAR ============================================================================================================-->
+<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+  <div class="container py-3">
+    <a class="navbar-brand" href="index.html">
+      <img src="src/imagens/Logo Pradão - forAll 2.png" alt="forAll" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar-items"
+      aria-controls="navbar-items"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-items">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="servicos.html" class="nav-link active">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a href="pacotesdeservicos.html" class="nav-link">Pacotes</a>
+        </li>
+        <li class="nav-item">
+          <a href="clubedevantagens.html" class="nav-link">Clube de Vantagens</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link">Blog</a>
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn-cta">Agende Agora</a>
+    </div>
+</div>
+</nav>
+
+  <!-- Conteúdo da página individual -->
+  <main class="container">
+    <!-- O conteúdo da main será gerado dinamicamente -->
+    <div class="main-content fade-in" id="main-content"></div>
+    <!-- Barra lateral com as miniaturas -->
+    <aside class="sidebar fade-in" id="sidebar"></aside>
+  </main>
+
+<!-- Modal para Agendamento -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Agende seu Procedimento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="name" required pattern="^[a-zA-ZÀ-ÿ]+(?: [a-zA-ZÀ-ÿ]+)+$" title="Digite pelo menos o nome e o sobrenome">
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="contact" required placeholder="(11) 99874-3210" pattern="\(\d{2}\) \d{5}-\d{4}" title="Digite no formato (11) 99874-3210">
+          </div>
+          <input type="hidden" id="service-title">
+          <button type="submit" class="btn btn-gold">Enviar</button>
+        </form>
+        <div id="confirmationMessage" class="mt-3 text-success" style="display:none;">
+          Em breve nossa equipe irá entrar em contato para fazer o seu agendamento!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Seção de Profissionais =========================================================================================================-->
+<section id="team" class="py-5 bg-light">
+  <div class="container fade-in">
+    <h2 class="text-center mb-4">Nossa Equipe</h2>
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-center">
+                <img src="src/imagens/forAll profissional 1.webp" class="card-img-top" alt="Dr. Roberto Silveira">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Roberto Silveira</h5>
+                  <p class="card-text">Especialidade: Dermatologia Avançada
+                    Resumo do Currículo: Dr. Roberto Silveira é especialista em Dermatologia Avançada, com formação em Medicina pela Universidade de São Paulo (USP) e especialização em dermatologia estética. Com mais de 10 anos de experiência, ele se destaca no tratamento de rejuvenescimento facial, laser e procedimentos minimamente invasivos. Sua abordagem personalizada e foco no bem-estar do paciente fazem dele um dos dermatologistas mais procurados da clínica.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-center">
+                <img src="src/imagens/forAll profissional 2.webp" class="card-img-top" alt="Dra. Camila Rocha">
+                <div class="card-body">
+                  <h5 class="card-title">Dra. Camila Rocha</h5>
+                  <p class="card-text">Especialidade: Estética Facial e Corporal
+                    Resumo do Currículo: Dra. Camila Rocha é formada em Biomedicina Estética pela Universidade Federal do Rio de Janeiro (UFRJ), com especialização em procedimentos estéticos avançados, incluindo preenchimento facial, toxina botulínica e harmonização facial. Com 10 anos de atuação, ela é conhecida por sua habilidade em proporcionar resultados naturais e de alto padrão em tratamentos estéticos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-center">
+                <img src="src/imagens/forAll profissional 3.webp" class="card-img-top" alt="Dra. Juliana Martins">
+                <div class="card-body">
+                  <h5 class="card-title">Dra. Juliana Martins</h5>
+                  <p class="card-text">Especialidade: Estética Avançada e Laser
+                    Resumo do Currículo: Dra. Juliana Martins é especialista em Estética Avançada e Laser, com formação em Fisioterapia Dermato-Funcional pela Pontifícia Universidade Católica de Minas Gerais (PUC-MG). Ela possui 8 anos de experiência e é especialista em tratamentos de rejuvenescimento a laser, redução de medidas e tratamentos de cicatrizes. Sua abordagem inovadora e técnica precisa garantem resultados excepcionais para seus pacientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card text-center">
+                <img src="src/imagens/forAll profissional 4.webp" class="card-img-top" alt="Dra. Letícia Costa">
+                <div class="card-body">
+                  <h5 class="card-title">Dra. Letícia Costa</h5>
+                  <p class="card-text">Especialidade: Harmonização Facial
+                    Resumo do Currículo: Dra. Letícia Costa é uma profissional experiente em Harmonização Facial, formada em Odontologia pela Universidade Estadual de Campinas (UNICAMP) e com especialização em harmonização orofacial. Com mais de 7 anos de experiência, Dra. Letícia é reconhecida por seu trabalho preciso e artístico, oferecendo soluções estéticas que realçam a beleza natural dos seus pacientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+// Script para formatar o campo de telefone automaticamente enquanto o usuário digita
+document.getElementById('contact').addEventListener('input', function (e) {
+    var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+    e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+// Validação do formulário
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const contact = document.getElementById('contact').value.trim();
+    const namePattern = /^[a-zA-ZÀ-ÿ]+(?: [a-zA-ZÀ-ÿ]+)+$/;
+    const contactPattern = /^\(\d{2}\) \d{5}-\d{4}$/;
+
+    if (!namePattern.test(name)) {
+        alert("Por favor, insira um nome completo válido.");
+        return;
+    }
+
+    if (!contactPattern.test(contact)) {
+        alert("Por favor, insira um número de telefone válido no formato (11) 99874-3210.");
+        return;
+    }
+
+    alert(`Mensagem enviada para o serviço: ${document.getElementById('service-title').value}`);
+
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('confirmationMessage').style.display = 'block';
+});
+
+// Reseta o formulário quando o modal é fechado para permitir novos envios
+document.getElementById('contactModal').addEventListener('hidden.bs.modal', () => {
+    document.getElementById('contactForm').reset();
+    document.getElementById('confirmationMessage').style.display = 'none';
+    document.getElementById('contactForm').style.display = 'block';
+});
+</script>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark-color" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="footer-details">
+          <div class="row">
+            <div class="col-12 col-md-4" id="news-container">
+              <h4>Fique por dentro das novidades</h4>
+              <p class="secondary-color">
+                Inscreva-se para saber em primeira mão
+              </p>
+              <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                </div>
+                <button class="btn btn-dark">Inscrever</button>
+              </form>
+            </div>
+            <div class="col-12 col-md-4" id="contact-container">
+              <h4>Formas de contato</h4>
+              <p class="secondary-color">(99)9999-9999</p>
+              <p class="secondary-color">contato@forall.com</p>
+            </div>
+            <div class="col-12 col-md-4" id="links-container">
+              <div class="row">
+                <h4>Você pode estar buscando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="secondary-color">Contratar</a></li>
+                    <li>
+                      <a href="#" class="secondary-color">Trabalhe conosco</a>
+                    </li>
+                    <li><a href="#" class="secondary-color">Seja Franquiado</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BOTTOM -->
+        <div class="col-12" id="footer-bottom">
+          <div class="row justify-content-between">
+            <div class="text-center secondary-color">
+              <p>&copy; 2024 forAll - Clínica de Estética Avançada. Todos os direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        // Função para adicionar a classe "visible" aos elementos quando entram na tela
+        const showElements = () => {
+            fadeElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+        };
+
+        // Mostrar os elementos com a classe fade-in quando a página carregar
+        showElements();
+
+        // Mostrar os elementos ao rolar a página
+        window.addEventListener('scroll', showElements);
+    });
+</script>
+
+</body>
+
+</html>

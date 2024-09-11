@@ -1,0 +1,179 @@
+/* Estilo para as seções dos pacotes com botões dourados */
+.bg-white {
+    background-color: #fff;
+}
+
+/* Ajuste de margem superior para a primeira seção, para que não desapareça sob a header */
+#ps-section-2 {
+    margin-top: 8rem; /* Aumenta a margem superior */
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Espaçamento superior e inferior das seções (diminuído) */
+section {
+    padding-top: 2rem; /* Diminuído para reduzir o espaço entre as seções */
+    padding-bottom: 3rem; /* Diminuído para reduzir o espaço entre as seções */
+}
+
+/* Estilo para o botão Assinar Pacote */
+.btn-primary-custom {
+    background-color: #BB9B37; /* Cor de fundo dourada */
+    border-color: #BB9B37; /* Borda dourada */
+    color: #fff; /* Cor do texto branca */
+    padding: 0.75em 2em; /* Espaçamento interno */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    margin-top: 20px;
+}
+
+.btn-primary-custom:hover {
+    background-color: #fff; /* Inverte as cores no hover */
+    color: #BB9B37; /* Cor do texto dourada */
+    border-color: #BB9B37; /* Borda dourada */
+}
+
+/* Estilo para os marcadores (bullet points) */
+.bullet-point {
+    color: #BB9B37; /* Cor dourada para o marcador */
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+/* Destaque para os títulos dos pacotes */
+.highlight {
+    color: #BB9B37;
+    font-weight: bold;
+}
+
+/* Ajuste de espaçamento entre imagem e texto */
+.col-md-6 {
+    margin-bottom: 1rem; /* Aumenta a margem inferior entre as colunas em dispositivos pequenos */
+}
+
+.img-fluid {
+    margin-bottom: 1rem; /* Adiciona espaçamento abaixo das imagens */
+}
+
+.text-content {
+    margin-top: 1.5rem; /* Adiciona espaçamento acima do texto */
+    padding-left: 2rem; /* Espaçamento esquerdo */
+    padding-right: 2rem; /* Espaçamento direito */
+}
+
+p {
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas no parágrafo para maior legibilidade */
+}
+
+/* Fade-in para imagens */
+.img-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.img-fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para a seção "Personalize Seu Pacote" com fundo diferente */
+#personalize-section {
+    background-color: #ece8ea; /* Tom diferente para destacar a seção */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+/* Estilo para o formulário no modal */
+.modal-header {
+    background-color: #BB9B37; /* Fundo dourado */
+    color: #fff; /* Cor do texto branco */
+    border-bottom: none; /* Remove a borda inferior do header, se houver */
+}
+
+.modal-header .modal-title {
+    font-size: 1.5em; /* Tamanho do título */
+    font-weight: bold;
+    margin: 0; /* Remove margens extras */
+}
+
+.modal-header .btn-close {
+    color: #fff; /* Cor do ícone de fechar */
+    opacity: 1; /* Ícone de fechar visível */
+}
+
+.modal-header .btn-close:hover {
+    color: #BB9B37; /* Ícone ao passar o mouse */
+    background-color: #fff; /* Fundo ao passar o mouse */
+    border-radius: 50%; /* Ícone arredondado */
+}
+
+.modal-content {
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
+    border-radius: 10px;
+}
+
+.form-label {
+    color: #000; /* Cor preta */
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.form-control {
+    background-color: #f9f9f9; /* Fundo claro */
+    color: #000; /* Texto preto */
+    border: 1px solid #BB9B37; /* Borda dourada */
+    border-radius: 5px;
+    padding: 0.75em 1em;
+    font-size: 1em;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    background-color: #fff; /* Fundo ao focar */
+    border-color: #BB9B37; /* Borda dourada */
+    box-shadow: none;
+}
+
+.btn-primary-custom {
+    background-color: #BB9B37; /* Fundo dourado */
+    border-color: #BB9B37; /* Borda dourada */
+    color: #fff; /* Texto branco */
+    padding: 0.75em 2em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #fff; /* Fundo branco no hover */
+    color: #BB9B37; /* Texto dourado no hover */
+    border-color: #BB9B37; /* Borda dourada */
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .modal-content {
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 1.5em;
+    }
+
+    .btn-primary-custom {
+        font-size: 1em;
+        padding: 0.6em;
+    }
+
+    .text-content {
+        padding-left: 1rem; /* Reduz o espaçamento em dispositivos móveis */
+        padding-right: 1rem; /* Reduz o espaçamento em dispositivos móveis */
+    }
+}

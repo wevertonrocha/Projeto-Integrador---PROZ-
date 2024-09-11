@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forAll - Clínica de Estética Avançada</title>
+    <link rel="shortcut icon" href="src/imagens/icone - ForAll Clinica de Estetica Avancada 1.png" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS e JS do projeto -->
+    <link rel="stylesheet" href="css/formularioclube.css" />
+    <script src="JS/formularioclube.js" defer></script>
+
+  </head>
+  <body>
+    <form action="" id="formularioclube">
+      <h2>Formulário Clube de Vantagens - forAll Exclusive</h2>
+      <label for="nome">*Nome Completo:</label>
+      <input type="text" id="nome" name="nome">
+      <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+      
+      <label for="dataNascimento">*Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento">
+      <p id="dataNascimento-helper" class="helper-text">Mensagem de ajuda</p>
+      
+      <label for="gender">*Gênero:</label>
+      <select id="gender" name="gender">
+        <option value="" disabled selected>Selecione seu gênero</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+      </select>
+      <p id="gender-helper" class="helper-text">Mensagem de ajuda</p>
+      
+      <label for="fone">*Telefone:</label>
+      <input type="tel" id="fone" name="fone" required placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}">
+      <p id="fone-helper" class="helper-text">Mensagem de ajuda</p>
+      
+      <label for="email">*E-mail:</label>
+      <input type="email" id="email" name="email">
+      <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+      
+      <button type="submit">Assinar</button>
+    </form>
+  </body>
+</html>

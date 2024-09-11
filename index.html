@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forAll - Clínica de Estética Avançada</title>
+    <link rel="shortcut icon" href="src/imagens/icone - ForAll Clinica de Estetica Avancada 1.png" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+<!-- NAVBAR ============================================================================================================-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/imagens/Logo Pradão - forAll 2.png" alt="forAll" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="pacotesdeservicos.html" class="nav-link">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a href="clubedevantagens.html" class="nav-link">Clube de Vantagens</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-cta">Agende Agora</a>
+        </div>
+    </div>
+    </nav>
+  
+<!-- SESSÃO 1: banners carrossel =============================================================================================-->
+<div class="container-fluid p-0" id="slider-container">   
+    <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="src/imagens/forAll - banner carrosel 01.webp" alt="Beleza 1" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Especializados em buscar a beleza que há em você</h5>
+                    <a href="servicos.html" class="btn btn-cta">Ver Serviços</a>
+                </div>
+            </div>   
+            <div class="carousel-item">
+                <img src="src/imagens/forAll - banner carrosel 02.webp" alt="Beleza 2" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Conquiste o prazer de alcançar a sua melhor versão</h5>
+                    <a href="servicos.html" class="btn btn-cta">Ver Serviços</a>
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <img src="src/imagens/forAll - banner carrosel 03.webp" alt="Beleza 3" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Realce sua beleza natural, desbloquei sua autoestima</h5>
+                    <a href="servicos.html" class="btn btn-cta">Ver Serviços</a>
+                </div>
+            </div> 
+            <div class="carousel-item">
+                <img src="src/imagens/forAll - banner carrosel 04.webp" alt="Beleza 4" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h5>Beleza que Inspira!<br>Conheça nossos pacotes de serviços</h5>
+                    <a href="pacotesdeservicos.html" class="btn btn-cta">Ver Serviços</a>
+                </div>
+            </div>          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>   
+</div>
+<!--SESSãO 2: informações===========================================================================================================-->
+<section id="section-2" class="text-center py-5 bg-secondary-color">
+    <div class="container">
+        <h2 class="headline">Ajudamos você a encontrar a beleza que você merece!</h2>
+        <p class="subheadline">Aqui na ForAll auxiliamos você a abraçar a sua verdadeira essência, <br> venha e descubra a sua verdadeira beleza!</p>
+        <a href="pacotesdeservicos.html" class="btn btn-cta mt-4">Saiba Mais</a>
+    </div>
+</section>
+<!-- JavaScript for transitions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#section-2').classList.add('visible');
+    });
+</script>
+<!-- sessão 3: Serviços ===================================================================================================-->
+<section id="premium-services" class="text-center py-5">
+    <div class="container">
+        <!-- Headline e Subtítulo -->
+        <h2 class="headline">Sua verdadeira beleza começa aqui</h2>
+        <p class="subheadline">Descubra a excelência em cada detalhe e transforme sua experiência de beleza.</p>
+        <!-- Vídeo -->
+        <div class="video-wrapper mb-4">
+            <video class="img-fluid img-fade-in" controls>
+                <source src="src/videos/forAll - conheça nossos serviços.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+        <!-- Botão de CTA -->
+        <a href="servicos.html" class="btn btn-cta mt-4">Explore Nossos Serviços</a>
+    </div>
+</section>
+<!-- JavaScript for transitions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#premium-services').classList.add('visible');
+    });
+</script>
+<!-- Sessão 4: Depoimentos =============================================================================================== -->
+<section id="testimonials" class="text-center py-5">
+    <div class="container">
+        <h2 class="section-title">Depoimentos dos Nossos Clientes</h2>
+        <p class="section-subtitle">Descubra como nossos serviços estão transformando vidas.<br> Veja o que os nossos clientes têm a dizer sobre a sua experiência com a ForAll!</p>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Comentário 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 1.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 1">
+                        <p class="testimonial-text">"Adorei o atendimento e os resultados. Recomendo a ForAll a todos!"</p>
+                        <p class="testimonial-author">Aline Mendes</p>
+                    </div>
+                </div>
+                <!-- Comentário 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 2.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 2">
+                        <p class="testimonial-text">"Serviço excelente e profissionais muito atenciosos, volto sempre e recomento ;)."</p>
+                        <p class="testimonial-author">Ana Clara Farias</p>
+                    </div>
+                </div>
+                <!-- Comentário 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 3.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 3">
+                        <p class="testimonial-text">"Os tratamentos são de alta qualidade e os resultados são visíveis rapidamente. E o atendimento é de primeira!"</p>
+                        <p class="testimonial-author">Mariana Candida</p>
+                    </div>
+                </div>
+                <!-- Comentário 4 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 4.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 4">
+                        <p class="testimonial-text">"Ambiente agradável e ótimos resultados. Voltarei com certeza!"</p>
+                        <p class="testimonial-author">Elem Mattos</p>
+                    </div>
+                </div>
+                <!-- Comentário 5 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 5.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 5">
+                        <p class="testimonial-text">"Equipe muito profissional e resultados surpreendentes, me ajudaram a identificar o que eu precisava e fiquei maravilhada!"</p>
+                        <p class="testimonial-author">Maria Mizamoto</p>
+                    </div>
+                </div>
+                <!-- Comentário 6 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 6.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 6">
+                        <p class="testimonial-text">"A clínica é moderna e os tratamentos são muito eficazes. Me surpreendi com os tratamentos para homens, estou muito mais confiante agora."</p>
+                        <p class="testimonial-author">Pedro Alves</p>
+                    </div>
+                </div>
+                <!-- Comentário 7 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 7.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 7">
+                        <p class="testimonial-text">"Recomendo a ForAll para todos, até eu que não acreditava em um bom resultado fiquei super feliz quando acabei meu tratamento."</p>
+                        <p class="testimonial-author">Ester Silva</p>
+                    </div>
+                </div>
+                <!-- Comentário 8 -->
+                <div class="carousel-item">
+                    <div class="testimonial-content">
+                        <img src="src/imagens/forAll - cliente depoimento 8.webp" class="img-fluid rounded-circle testimonial-img" alt="Cliente 8">
+                        <p class="testimonial-text">"Resultados incríveis, foi show do início ao fim, super recomendo, fácil acesso, atendimento top, desde a análise até o fim do tratamento, e o preço tem um custo benefício que nunca vi antes, super recomendo!"</p>
+                        <p class="testimonial-author">João Carneiro</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- JavaScript para efeitos de transição -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        const section = document.querySelector('#testimonials');
+        observer.observe(section);
+    });
+</script>
+<!-- Sessão 5: Clube de Vantagens =========================================================================================-->
+<section id="club" class="d-flex align-items-center img-fade-in">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Conheça Agora e se Encante com nosso<br><span class="highlight">Clube de Vantagens</span></h3>
+                <p>Nosso Clube de Vantagens oferece uma série de <span class="highlight">benefícios exclusivos</span> para nossos clientes. Aproveite descontos especiais, acesso prioritário a novos tratamentos e muito mais. Junte-se a nós e descubra um mundo de vantagens que vão além da beleza.</p>
+                <a href="clubedevantagens.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+            <div class="col-md-6">
+                <img src="src/imagens/forAll - Pacote Corpo Perfeito.webp" class="img-fluid rounded img-slide img-fade-in" alt="Clube de Vantagens">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sessão 6: Blog e Redes Sociais =======================================================================================-->
+<section id="beauty-tips" class="d-flex flex-column flex-md-row py-5">
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+        <!-- Imagem ao lado esquerdo -->
+        <div class="image-container">
+            <img src="src/imagens/forAll - mockp instagram (1080 x 1080 px).webp" alt="Dicas de Beleza" class="img-fluid">
+        </div>
+        <!-- Conteúdo ao lado direito -->
+        <div class="text-content text-md-left">
+            <h3>Conheça nossas redes</h3>
+            <p>Aqui você encontra dicas valiosas para cuidar da sua beleza. Siga-nos nas redes sociais para mais conteúdos exclusivos.</p>
+            
+            <div class="social-icons mb-4">
+                <a href="https://www.facebook.com/" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.tiktok.com/" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                </a>
+                
+                <a href="https://www.youtube.com/" class="social-icon"><i class="bi bi-youtube"></i></a>
+            </div>
+            <a href="blog.html" class="btn btn-primary">Conheça Agora Blog da Beleza</a>
+        </div>
+    </div>
+</section>
+<script>
+    window.addEventListener('load', function () {
+        document.querySelector('.image-container').classList.add('show');
+    });
+</script>
+
+<!-- Sessão 7: Localização ================================================================================================-->
+<section id="find-location">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 img-fade-in">
+                <h3>Encontre a unidade mais próxima de você</h3>
+                <p>Veja abaixo os endereços das nossas unidades e agende sua visita agora mesmo.</p>
+                <a href="#" class="btn btn-primary">Agende Agora</a>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 img-fade-in">
+                        <div id="map1">
+                            <!-- Mapa 1 -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.3660274729565!2d-122.08406568465506!3d37.422002979818944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1622095629256!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6 img-fade-in">
+                        <div id="map2">
+                            <!-- Mapa 2 -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.3660274729565!2d-122.08406568465506!3d37.422002979818944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1622095629256!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FOOTER ===============================================================================================================-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite o seu e-mail"
+                    />
+                  </div>
+                  <button class="btn btn-dark">Inscrever</button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(99)9999-9999</p>
+                <p class="secondary-color">contato@forall.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <div class="row">
+                  <h4>Você pode estar buscando por:</h4>               
+                  <div class="col-6">
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="secondary-color">Contratar</a></li>
+                      <li>
+                        <a href="#" class="secondary-color">Trabalhe conosco</a>
+                      </li>
+                      <li><a href="#" class="secondary-color">Seja Franquiado</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOOTER BOTTOM -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">             
+                <div class="text-center secondary-color">
+                    <p>&copy; 2024 forAll - Clínica de Estética Avançada. Todos os direitos reservados.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const images = document.querySelectorAll('.img-fade-in');
+          
+          // Função para adicionar a classe "show" às imagens quando entram na tela
+          const showImages = () => {
+            images.forEach((img) => {
+              const rect = img.getBoundingClientRect();
+              if (rect.top < window.innerHeight && rect.bottom > 0) {
+                img.classList.add('show');
+              }
+            });
+          };
+        
+          // Mostrar imagens quando a página carregar
+          showImages();
+        
+          // Mostrar imagens ao rolar a página
+          window.addEventListener('scroll', showImages);
+        });
+        </script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarItems = document.querySelector('#navbar-items');
+        
+                // Abre o menu ocupando toda a tela
+                navbarToggler.addEventListener('click', () => {
+                    navbarItems.classList.toggle('show');
+                });
+        
+                // Fecha o menu ao clicar fora dele
+                document.addEventListener('click', (event) => {
+                    const isClickInside = navbarItems.contains(event.target) || navbarToggler.contains(event.target);
+                    if (!isClickInside) {
+                        navbarItems.classList.remove('show');
+                    }
+                });
+            });
+        </script>
+  </body>
+</html>

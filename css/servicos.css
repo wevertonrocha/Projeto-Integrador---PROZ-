@@ -1,0 +1,179 @@
+/* Estilo do Botão Contrate Agora */
+.btn-cta {
+    background-color: #791555;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 0.75em 2em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.6s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    margin-top: 20px;
+    text-align: left; /* Alinhamento à esquerda */
+  }
+  
+  .btn-cta:hover {
+    background-color: #ffffff;
+    color: #791555;
+    border-color: #791555;
+  }
+  
+  /* Estilo do Botão Enviar no Modal */
+  .btn-gold {
+    background-color: #BB9B37; /* Cor de fundo dourada */
+    color: #fff; /* Cor do texto branca */
+    border: none;
+    padding: 0.75em 2em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    display: inline-block; /* Garante que o botão seja exibido corretamente */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Mostra o cursor de clique */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  .btn-gold:hover {
+    background-color: #fff; /* Cor de fundo branca no hover */
+    color: #BB9B37; /* Cor do texto dourada no hover */
+    border: 1px solid #BB9B37; /* Borda dourada no hover */
+  }
+  
+  /* Estilos para a Main Content e Sidebar */
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 120px;
+  }
+  
+  .main-content {
+    flex: 3;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-content img {
+    width: 100%; /* Ocupar todo o espaço do card */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .main-content p {
+    margin-bottom: 30px;
+    color: #555;
+    text-align: justify; /* Justificar o texto */
+  }
+  
+  .sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 800px;
+    overflow-y: auto;
+  }
+  
+  .post-sidebar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-sidebar:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .post-sidebar img {
+    width: 70px; /* Tamanho ajustado das miniaturas */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  
+  .post-sidebar h2 {
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    color: #333;
+    margin: 0; /* Remove margens adicionais */
+  }
+    /* sessao profissionais--------------------------------------------------------------------------------------------------- */
+#team .card {
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    transition: transform 0.3s ease; /* Animação suave para hover */
+}
+
+#team .card:hover {
+    transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+}
+
+#team .card-img-top {
+    border-radius: 10px 10px 0 0; /* Arredonda as bordas superiores */
+}
+
+#team .carousel-control-prev-icon,
+#team .carousel-control-next-icon {
+    background-color: #BB9B37; /* Cor dourada para os controles */
+    border-radius: 50%;
+}
+
+#team .carousel-control-prev-icon:hover,
+#team .carousel-control-next-icon:hover {
+    background-color: #791555; /* Cor alternativa ao passar o mouse */
+}
+/* Animação de fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+  /* Ajustes para responsividade */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .sidebar {
+      max-height: none;
+      overflow-y: visible;
+    }
+  
+    .post-sidebar {
+      margin-bottom: 10px;
+    }
+  
+    .post-sidebar img {
+      width: 60px; /* Tamanho menor para telas menores */
+      height: 60px;
+    }
+  
+    .post-sidebar h2 {
+      font-size: 0.9rem; /* Fonte menor em dispositivos móveis */
+    }
+  }
+  

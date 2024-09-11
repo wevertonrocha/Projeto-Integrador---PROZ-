@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forAll - Clínica de Estética Avançada</title>
+    <link rel="shortcut icon" href="src/imagens/icone - ForAll Clinica de Estetica Avancada 1.png" type="image/x-icon" />
+    <!-- Google fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+
+    <!-- JavaScript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+<!-- NAVBAR ============================================================================================================-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/imagens/Logo Pradão - forAll 2.png" alt="forAll" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a href="pacotesdeservicos.html" class="nav-link">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a href="clubedevantagens.html" class="nav-link">Clube de Vantagens</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link  active">Blog</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-cta">Agende Agora</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- CONTEÚDO DO BLOG -->
+    <main class="container fade-in">
+        <!-- O conteúdo da main será gerado dinamicamente -->
+        <div class="main-content" id="main-content"></div>
+        <!-- Barra lateral com as miniaturas -->
+        <aside class="sidebar fade-in" id="sidebar"></aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-container">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite o seu e-mail" />
+                                </div>
+                                <button class="btn btn-dark">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Formas de contato</h4>
+                            <p class="secondary-color">(99)9999-9999</p>
+                            <p class="secondary-color">contato@forall.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar buscando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="secondary-color">Contratar</a></li>
+                                        <li><a href="#" class="secondary-color">Trabalhe conosco</a></li>
+                                        <li><a href="#" class="secondary-color">Seja Franquiado</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER BOTTOM -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="text-center secondary-color">
+                            <p>&copy; 2024 forAll - Clínica de Estética Avançada. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/blog.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const fadeElements = document.querySelectorAll('.fade-in');
+          
+          // Função para adicionar a classe "visible" aos elementos quando entram na tela
+          const showElements = () => {
+              fadeElements.forEach((el) => {
+                  const rect = el.getBoundingClientRect();
+                  if (rect.top < window.innerHeight && rect.bottom > 0) {
+                      el.classList.add('visible');
+                  }
+              });
+          };
+  
+          // Mostrar os elementos com a classe fade-in quando a página carregar
+          showElements();
+  
+          // Mostrar os elementos ao rolar a página
+          window.addEventListener('scroll', showElements);
+      });
+  </script>
+  
+</body>
+</html>

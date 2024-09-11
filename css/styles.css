@@ -1,0 +1,748 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-primary-color {
+    background-color: #fff;
+}
+
+.bg-secondary-color {
+    background-color: #ece8ea;
+}
+
+.ba-dark-color {
+    background-color: #1B2530;
+}
+
+.primary-color {
+    color: #050505;
+}
+
+.secondary-color {
+    color: #7a7a7a;
+}
+
+/* NAVBAR ===============================================================================*/
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+}
+
+#navbar a {
+    color: #050505;
+}
+
+#navbar a:hover {
+    color: #791555;
+}
+
+#navbar .active {
+    border-bottom: 1px solid #791555;
+    color: #791555;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item {
+    margin: 0 1em;
+}
+
+/* Estilo do botão "Agende Agora" na navbar */
+#navbar .btn-cta {
+    background-color: #791555; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: 2px solid transparent; /* Borda padrão transparente */
+    padding: 0.4em 1.5em; /* Reduza o padding para evitar quebra de linha */
+    white-space: nowrap; /* Impede a quebra de linha dentro do botão */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.6s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#navbar .btn-cta:hover {
+    background-color: #ffffff; /* Cor de fundo do botão ao passar o mouse */
+    color: #791555; /* Cor do texto ao passar o mouse */
+    border-color: #791555; /* Cor da borda ao passar o mouse */
+}
+
+@media (max-width: 991.98px) {
+    #navbar-items {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha itens do menu à esquerda */
+    }
+
+    #navbar-items .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha itens do menu à esquerda */
+        margin-bottom: 1em;
+        width: 100%; /* Garante que a largura dos itens do menu ocupe 100% do container */
+        height: 100%;
+    }
+
+    #navbar-items .nav-item {
+        margin: 0.5em 0; /* Ajusta o espaçamento para o menu em tela pequena */
+    }
+
+    .navbar-brand {
+        margin-bottom: 1em; /* Espaçamento entre o logo e o menu em telas pequenas */
+    }
+
+    .btn-cta {
+        margin-top: 1em; /* Espaçamento acima do botão em telas pequenas */
+        align-self: flex-start; /* Alinha o botão à esquerda */
+    }
+}
+
+/* SESSÃO 1: banners carrossel =========================================================*/
+#slider-container {
+    height: 100vh;
+}
+
+#slider .carousel-item {
+    height: 100vh;
+}
+
+#slider .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#slider .carousel-caption {
+    bottom: 4em; /* Ajuste a posição vertical da legenda para desktop */
+}
+
+#slider .carousel-caption h5 {
+    font-size: 2.5em;
+    text-shadow: #1b2530 2px 2px;
+}
+
+.btn-cta {
+    background-color: #791555; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: 2px solid transparent; /* Borda padrão transparente */
+    padding: 0.5em 1.5em; /* Ajuste o espaçamento interno do botão */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #ffffff; /* Cor de fundo do botão ao passar o mouse */
+    color: #791555; /* Cor do texto ao passar o mouse */
+    border-color: #791555; /* Cor da borda ao passar o mouse */
+}
+
+#slider .btn {
+    padding: 0.5em 1.5em; /* Ajuste o tamanho do botão */
+    font-size: 0.9em; /* Ajuste o tamanho da fonte */
+    margin-top: 1em;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #791555;
+    font-size: 3em;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #1B2530;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active {
+    background-color: #791555;
+}
+
+@media (max-width: 767px) {
+    #slider-container {
+        height: 100vh;
+    }
+
+    #slider .carousel-item {
+        height: 100vh;
+    }
+
+    #slider .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #slider .carousel-caption {
+        bottom: 1.5em; /* Ajuste a posição vertical da legenda para mobile */
+    }
+
+    #slider .carousel-caption h5 {
+        font-size: 1.2em; /* Ajuste o tamanho da fonte para mobile */
+    }
+
+    .btn-cta {
+        padding: 0.4em 1em; /* Ajuste o espaçamento interno do botão para mobile */
+        font-size: 0.8em; /* Ajuste o tamanho da fonte para mobile */
+    }
+
+    .carousel-indicators {
+        bottom: 4em; /* Ajuste a posição vertical dos indicadores para mobile */
+    }
+}
+
+/* SESSÃO 2 ==================================================================================*/
+#section-2 {
+    background-color: #ece8ea; /* Cor de fundo da sessão */
+    color: #1B2530; /* Cor do texto */
+}
+
+.headline {
+    font-size: 2.5em;
+    color: #1B2530;
+    margin-bottom: 0.5em;
+    font-weight: regular;
+}
+
+.subheadline {
+    font-size: 1.3em;
+    color: #7a7a7a;
+    margin-bottom: 2em;
+}
+
+.btn-primary {
+    background-color: #791555; /* Cor de fundo do botão */
+    border-color: #791555; /* Cor da borda do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 0.75em 2em; /* Espaçamento interno do botão */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    border-radius: 10; /* bordas arredondadas */
+}
+
+.btn-primary:hover {
+    background-color: #ffffff; /* Cor de fundo do botão ao passar o mouse */
+    border-color: #791555; /* Cor da borda do botão ao passar o mouse */
+    color: #791555; /* Cor do texto ao passar o mouse */
+}
+
+/* Efeito de Transição */
+#section-2 h2,
+#section-2 p,
+#section-2 .btn {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+
+#section-2.visible h2,
+#section-2.visible p,
+#section-2.visible .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sessão 3: Serviços ===================================================================================*/
+#premium-services {
+    background-color: #ffffff;
+    color: #1B2530;
+    padding: 3em 0;
+}
+
+/* Estilo do título principal */
+.headline {
+    font-size: 2.5em;
+    color: #1B2530;
+    margin-bottom: 0.5em;
+    font-weight: regular;
+}
+
+/* Estilo do subtítulo */
+.subheadline {
+    font-size: 1.3em;
+    color: #7a7a7a;
+    margin-bottom: 2em;
+}
+
+/* Estilo do vídeo */
+.video-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Bordas arredondadas para o vídeo */
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto; /* Mantém a proporção 16:9 */
+}
+
+/* Estilo do botão "Veja Mais" */
+.btn-cta {
+    background-color: #791555; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: 2px solid transparent; /* Borda padrão transparente */
+    padding: 0.75em 2em; /* Espaçamento interno do botão */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    font-weight: bold; /* Fonte em negrito */
+    text-align: center; /* Centralizar o texto */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #ffffff; /* Cor de fundo do botão ao passar o mouse */
+    color: #791555; /* Cor do texto ao passar o mouse */
+    border-color: #791555; /* Cor da borda ao passar o mouse */
+}
+
+/* Efeito de Transição */
+#premium-services h2,
+#premium-services p,
+#premium-services .btn {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+
+#premium-services.visible h2,
+#premium-services.visible p,
+#premium-services.visible .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sessão 4: Depoimentos ========================================================================*/
+#testimonials {
+    background-color: #f5f5f5; /* Cor de fundo */
+    color: #1B2530; /* Cor do texto */
+    padding: 5em 0;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: regular;
+    margin-bottom: 0.5em;
+    color: #791555;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.section-subtitle {
+    font-size: 1.3em;
+    color: #7a7a7a;
+    margin-bottom: 3em;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.testimonial-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.testimonial-text {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #791555;
+}
+
+/* Ativar a transição quando o carrossel for exibido */
+#testimonials.visible .section-title,
+#testimonials.visible .section-subtitle,
+#testimonials.visible .testimonial-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Customizar as setas de navegação do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #791555; /* Define a cor de fundo das setas */
+    border-radius: 50%; /* Torna as setas arredondadas */
+    width: 2em; /* Ajusta o tamanho das setas */
+    height: 2em;
+    background-size: 50%; /* Ajusta o tamanho do ícone dentro do fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destaque */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #791555ff; /* Cor das setas ao passar o mouse */
+    border: 1px solid #791555; /* Adiciona uma borda quando em hover */
+}
+
+/* Sessão 5: Clube de Vantagens ===============================================*/
+#club {
+    padding: 6em 0;
+    background-color: #1B2530; /* Cor de fundo padrão */
+    color: #fff;
+    text-align: left;
+    position: relative;
+    overflow: hidden; /* Garante que a animação da imagem não saia do contêiner */
+}
+
+/* Container dentro da sessão */
+#club .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Destaque */
+.highlight {
+    color: #BB9B37; /* Cor da palavra específica */
+    font-weight: bold; /* Deixar a palavra em negrito */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Título */
+#club h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #fff; /* Cor do título */
+    font-weight: bold; /* Negrito */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Começa deslocado para cima */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transições suaves para opacidade e deslocamento */
+}
+
+/* Parágrafo */
+#club p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    color: #ffffff; /* Cor do texto */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocado para baixo */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transições suaves para opacidade e deslocamento */
+}
+
+/* Botão */
+#club .btn {
+    border-color: transparent;
+    color: #fff; /* Cor do texto do botão */
+    background-color: #BB9B37; /* Cor de fundo do botão */
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    font-weight: bold; /* Negrito */
+    padding: 0.75em 2em; /* Dimensões do botão */
+    font-size: 1em;
+}
+
+#club .btn:hover {
+    background-color: #ece8ea; /* Cor de fundo do botão ao passar o mouse */
+    color: #BB9B37; /* Cor do texto ao passar o mouse */
+    border-color: transparent; /* Cor da borda ao passar o mouse */
+}
+
+/* Imagem */
+#club img {
+    max-width: 100%;
+    border-radius: 10px;
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-20px); /* Desloca a imagem para a esquerda */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Transições suaves para opacidade e deslocamento */
+}
+
+/* Animação de fade-in e slide-in */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplica a animação ao carregar a página */
+#club h3, #club p {
+    animation: fade-in-up 0.6s ease-out forwards; /* Define a animação com 'forwards' para manter o estado final */
+}
+
+#club img {
+    animation: slide-in 0.6s ease-out forwards; /* Define a animação com 'forwards' para manter o estado final */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 767px) {
+    #club .container {
+        flex-direction: column;
+        align-items: center; /* Alinha os itens ao centro em telas pequenas */
+    }
+}
+
+/* Sessão 6: Dicas de Beleza e Redes Sociais ======================================================================*/
+#beauty-tips {
+    padding: 6em 0;
+    background-color: #ece8ea;
+    color: #1B2530;
+    position: relative;
+    overflow: hidden; /* Garante que os efeitos de transição não ultrapassem o container */
+}
+
+/* Container flexível */
+#beauty-tips .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contêiner da imagem com fade-in */
+#beauty-tips .image-container {
+    flex: 1;
+    margin-right: 2em;
+    position: relative;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 1s ease-in-out; /* Transição do fade-in */
+}
+
+#beauty-tips .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Quando a imagem estiver pronta para ser exibida, ela deve ficar visível */
+#beauty-tips .image-container.show {
+    opacity: 1; /* A imagem ficará visível */
+}
+
+/* Contêiner do texto */
+#beauty-tips .text-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* Título e parágrafo sem efeitos de transição */
+#beauty-tips h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+#beauty-tips p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+
+/* Ícones sociais */
+#beauty-tips .social-icons {
+    margin-bottom: 2em;
+}
+
+#beauty-tips .social-icon {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 2em;
+    color: #791555;
+}
+
+#beauty-tips .social-icon:hover {
+    color: #1B2530;
+}
+
+/* Botão */
+#beauty-tips .btn {
+    border-color: transparent;
+    color: #fff;
+    background-color: #791555;
+    transition: all 0.3s ease;
+    padding: 0.75em 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#beauty-tips .btn:hover {
+    border-color: #791555;
+    background-color: #fff;
+    color: #791555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão ao passar o mouse */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 767px) {
+    #beauty-tips .container {
+        flex-direction: column;
+    }
+
+    #beauty-tips .image-container {
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+}
+
+
+/* Sessão 7: Encontre a unidade mais próxima de você =============================================== */
+#find-location {
+    padding: 6em 0;
+    background-color: #f8f9fa; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    position: relative;
+    overflow: hidden; /* Garante que os efeitos de transição não ultrapassem o container */
+}
+
+/* Container flexível */
+#find-location .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+#find-location h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    opacity: 0; /* Começa com opacidade reduzida */
+    transition: opacity 0.6s ease; /* Transição suave para opacidade */
+}
+
+/* Parágrafo */
+#find-location p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2em;
+    opacity: 0; /* Começa com opacidade reduzida */
+    transition: opacity 0.6s ease; /* Transição suave para opacidade */
+}
+
+/* Botão */
+#find-location .btn {
+    border-color: transparent;
+    color: #fff;
+    background-color: #791555; /* Cor de fundo do botão */
+    transition: all 0.3s ease;
+    padding: 0.75em 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: bold; /* Negrito */
+}
+
+#find-location .btn:hover {
+    border-color: #791555;
+    background-color: #fff;
+    color: #791555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao botão ao passar o mouse */
+}
+
+/* Mapas */
+#find-location #map1,
+#find-location #map2 {
+    height: 200px; /* Altura dos mapas */
+    margin-top: 1em; /* Espaço acima dos mapas */
+    border: 1px solid #ccc; /* Borda dos mapas */ 
+    border-radius: 10px;
+    overflow: hidden; /* Oculta qualquer parte do mapa além da altura especificada */
+    opacity: 0; /* Começa com opacidade reduzida */
+    transition: opacity 0.6s ease; /* Transição suave para opacidade */
+}
+
+/* Efeito de transição simplificado para título, parágrafo e mapas */
+#find-location .container {
+    opacity: 1; /* Torna o container totalmente visível */
+}
+
+#find-location h3,
+#find-location p,
+#find-location #map1,
+#find-location #map2 {
+    opacity: 1; /* Torna o título, texto e mapas totalmente visíveis */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 767px) {
+    #find-location .container {
+        flex-direction: column;
+    }
+
+    #find-location .col-md-6 {
+        margin-bottom: 2em; /* Espaço abaixo das colunas em telas pequenas */
+    }
+}
+
+/* FOOTER =============================================================================== */
+#footer {
+    background-color: #ece8ea; /* Cor de fundo do footer */
+    color: #1B2530; /* Cor do texto no footer */
+    padding: 2em 0; /* Espaçamento interno do footer */
+    border: none; /* Remove bordas do footer */
+}
+
+#footer h4 {
+    color: #1B2530; /* Cor dos títulos no footer */
+    margin-bottom: 1em; /* Espaçamento abaixo dos títulos */
+}
+
+#footer .secondary-color {
+    color: #1B2530; /* Cor secundária no footer */
+}
+
+#footer .btn-dark {
+    background-color: #791555; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0.75em 2em; /* Dimensões do botão */
+    font-size: 1em; /* Tamanho da fonte do botão */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    transition: all 0.3s ease; /* Transições suaves para cor de fundo e do texto */
+}
+
+#footer .btn-dark:hover {
+    background-color: #fff; /* Cor de fundo do botão ao passar o mouse */
+    color: #791555; /* Cor do texto ao passar o mouse */
+    border: 1px solid #791555; /* Borda do botão ao passar o mouse */
+}
+
+#footer #footer-details {
+    margin-bottom: 2em; /* Espaço abaixo do conteúdo principal do footer */
+}
+
+#footer #footer-bottom {
+    border: none; /* Remove qualquer borda no rodapé inferior */
+    padding-top: 1em; /* Espaço acima do rodapé inferior */
+}
+
+#footer #footer-bottom p {
+    margin: 0; /* Remove a margem do parágrafo no rodapé inferior */
+}
