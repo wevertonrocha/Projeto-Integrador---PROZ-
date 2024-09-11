@@ -48,7 +48,7 @@ O projeto foi desenvolvido em grupo pelos seguintes integrantes:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/forall.git
+   git clone https://github.com/wevertonrocha/Projeto-Integrador---PROZ-.git
    ```
 2. Abra o arquivo `index.html` no seu navegador.
 
